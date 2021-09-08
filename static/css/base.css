@@ -6,7 +6,7 @@ body {
     background: url('/media/humming-bird-broun.jpg') no-repeat top center fixed;
     background-size: cover;
     color: #212529;
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: calc(100vh - 164px);
 }
 
@@ -21,6 +21,10 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.logo-font {
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .main-logo-link {
