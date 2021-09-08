@@ -73,7 +73,7 @@
             "description": "Organic dry apple slices. Place them into a saucepan, add 1 litre of boiling water, close a lid and leave for 8 hours. Delicious apple drink with fruit pieces is ready",
             "has_sizes": false,
             "price": 2.99,
-            "category": 1,
+            "category": 2,
             "rating": 4.8,
             "image_url": "",
             "image": "apple-fruit.jpg"
@@ -89,7 +89,7 @@
             "description": "Homemade organic dry apple & apricot slices. Place them into a saucepan, add 1 litre of boiling water, close a lid and leave for 8 hours. Delicious apple & apricot drink with fruit pieces is ready",
             "has_sizes": false,
             "price": 2.99,
-            "category": 1,
+            "category": 2,
             "rating": 4.9,
             "image_url": "",
             "image": "apricot-fruit.jpg"
@@ -105,7 +105,7 @@
             "description": "",
             "has_sizes": true,
             "price": 16.99,
-            "category": 2,
+            "category": 3,
             "rating": 4.6,
             "image_url": "",
             "image": "ambrosia-man.jpg"
@@ -121,7 +121,7 @@
             "description": "",
             "has_sizes": true,
             "price": 19.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.7,
             "image_url": "",
             "image": "ambrosia-woman.jpg"

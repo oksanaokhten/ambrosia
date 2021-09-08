@@ -17,9 +17,9 @@
                 Drinks &amp; Juices
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drink-link">
-                <a href="" class="dropdown-item">Drinks</a>
-                <a href="" class="dropdown-item">Juices</a>
-                <a href="" class="dropdown-item">All Drinks &amp; Juices</a>
+                <a href="{% url 'products' %}?category=juices" class="dropdown-item">Juices</a>
+                <a href="{% url 'products' %}?category=drinks" class="dropdown-item">Drinks</a>
+                <a href="{% url 'products' %}?category=juices,drinks" class="dropdown-item">All Drinks &amp; Juices</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Man T-Shirts</a>
-                <a href="" class="dropdown-item">Woman T-Shirts</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=man" class="dropdown-item">Man</a>
+                <a href="{% url 'products' %}?category=woman" class="dropdown-item">Woman</a>
+                <a href="{% url 'products' %}?category=man,woman" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
