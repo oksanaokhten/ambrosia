@@ -7,23 +7,7 @@ body {
     background-size: cover;
     color: #212529;
     font-family: 'Montserrat Alternates', sans-serif;
-    /* The following code was given by fran_alumna in Slack */
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-/* The following two code was given by fran_alumna in Slack */
-div.content {
-    flex: 1 auto;
-}
-
-footer {
-    flex-shrink:0;
-}
-
-.margin-t {
-    margin-top: 100px;
+    height: calc(100vh - 164px);
 }
 
 .border-dark {
@@ -49,12 +33,6 @@ footer {
 
 /* -------------------------------- Media Queries */
 
-@media (min-width: 1600px) {
-    .margin-t {
-        margin-top: 200px;
-    }
-}
-
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
@@ -74,11 +52,5 @@ footer {
 
     .header-container {
         padding-top: 164px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .margin-t {
-        margin-top: 300px;
     }
 }
