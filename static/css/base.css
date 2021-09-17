@@ -35,6 +35,20 @@ body {
     min-width: 240px;
 }
 
+/* Next two code were given by my Mentor for the previous project */
+
+.fit-card-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Hide overflow of a long product name */
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
