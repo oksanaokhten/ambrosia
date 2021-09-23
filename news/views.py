@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import News
+from .forms import NewsForm
 
 
 def all_news(request):
@@ -24,3 +25,14 @@ def news_detail(request, news_id):
     }
 
     return render(request, 'news/store_news_detail.html', context)
+
+
+def add_news(request):
+    """ Add a news to the store """
+    form = NewsForm()
+    template = 'news/add_news.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
