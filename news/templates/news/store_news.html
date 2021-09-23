@@ -20,15 +20,21 @@
     </div>
     {% for store_news in news %}
         <div class="row justify-content-center my-4">
-            <div class="col-2">
+            <div class="col-lg-2 col-md-4">
                 {% if store_news.image %}
-                    <img class="news-image news" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
+                    <a href="{% url 'news_detail' store_news.id %}">
+                        <img class="news-image news" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
+                    </a>
                 {% else %}
-                    <img class="news-image news" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
+                    <a href="{% url 'news_detail' store_news.id %}">
+                        <img class="news-image news" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
+                    </a>
                 {% endif %}
             </div>
-            <div class="col-6">
-                <p class="mb-2 text-overflow news"><strong>{{ store_news.name }}</strong></p>
+            <div class="col-lg-6 col-md-4">
+                <a class="text-dark" href="{% url 'news_detail' store_news.id %}">
+                    <p class="mb-2 text-overflow news"><strong>{{ store_news.name }}</strong></p>
+                </a>
                 <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
                 <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
                 <p class="mt-2 small text-muted">{{ store_news.date.date }}</p>

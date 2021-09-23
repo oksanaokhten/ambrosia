@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-12 col-md-6 col-lg-2 offset-lg-2">
+            <div class="image-container my-5">
+                {% if store_news.image %}
+                    <img class="card-img-top .fit-card-img" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
+                {% else %}
+                    <img class="card-img-top .fit-card-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="product-details-container mb-5 mt-md-5">
+                <h5><strong>{{ store_news.name }}</strong></h5>
+                <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
+                <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
+                <p class="my-4 text-dark">{{ store_news.text }}</p>
+                <p class="mt-2 small text-muted">{{ store_news.date.date }}</p>  
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
