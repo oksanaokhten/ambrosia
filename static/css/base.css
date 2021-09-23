@@ -49,11 +49,6 @@ body {
     text-overflow: ellipsis;
 }
 
-.news-image {
-    height: 150px;
-    object-fit: cover;
-}
-
 .overlay {
 	height: 100%;
 	width: 100%;

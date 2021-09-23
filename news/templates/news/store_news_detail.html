@@ -16,9 +16,9 @@
         <div class="col-12 col-md-6 col-lg-2 offset-lg-2">
             <div class="image-container my-5">
                 {% if store_news.image %}
-                    <img class="card-img-top .fit-card-img" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
+                    <img class="card-img-top img-fluid" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
                 {% else %}
-                    <img class="card-img-top .fit-card-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
                 {% endif %}
             </div>
         </div>
@@ -28,7 +28,7 @@
                 <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
                 <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
                 <p class="my-4 text-dark">{{ store_news.text }}</p>
-                <p class="mt-2 small text-muted">{{ store_news.date.date }}</p>  
+                <p class="mt-2 small text-muted">Published: {{ store_news.date.date }}</p>  
             </div>
         </div>
     </div>

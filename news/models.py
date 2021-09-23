@@ -10,8 +10,8 @@ class News(models.Model):
     admin_name = models.CharField(max_length=50)
     admin_profession = models.CharField(max_length=50)
     text = models.TextField()
-    image = models.ImageField(null=True, blank=True)
     date = models.DateTimeField('date published')
+    image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name

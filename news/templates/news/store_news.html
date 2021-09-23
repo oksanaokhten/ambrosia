@@ -19,27 +19,31 @@
         </div>
     </div>
     {% for store_news in news %}
-        <div class="row justify-content-center my-4">
-            <div class="col-lg-2 col-md-4">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-2 offset-lg-2">
+            <div class="image-container mt-3">
                 {% if store_news.image %}
                     <a href="{% url 'news_detail' store_news.id %}">
-                        <img class="news-image news" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
+                        <img class="card-img-top img-fluid" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
                     </a>
                 {% else %}
                     <a href="{% url 'news_detail' store_news.id %}">
-                        <img class="news-image news" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
                     </a>
                 {% endif %}
             </div>
-            <div class="col-lg-6 col-md-4">
+        </div>
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="product-details-container mt-3">
                 <a class="text-dark" href="{% url 'news_detail' store_news.id %}">
                     <p class="mb-2 text-overflow news"><strong>{{ store_news.name }}</strong></p>
                 </a>
                 <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
                 <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
-                <p class="mt-2 small text-muted">{{ store_news.date.date }}</p>
+                <p class="mt-2 small text-muted">Published: {{ store_news.date.date }}</p>  
             </div>
         </div>
+    </div>
     {% endfor %}    
 </div>
 <div class="btt-button shadow-sm rounded-0 border border-dark">
@@ -47,4 +51,13 @@
         <i class="fas fa-arrow-up text-dark mx-auto my-auto"></i>
     </a>	
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
 {% endblock %}
