@@ -46,3 +46,27 @@ def add_news(request):
     }
 
     return render(request, template, context)
+
+
+def edit_news(request, news_id):
+    """ Edit a news in the news manager """
+    news = get_object_or_404(News, pk=news_id)
+    if request.method == 'POST':
+        form = NewsForm(request.POST, request.FILES, instance=news)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated store news!')
+            return redirect(reverse('news_detail', args=[news.id]))
+        else:
+            messages.error(request, 'Failed to update store news. Please ensure the form is valid.')
+    else:
+        form = NewsForm(instance=news)
+        messages.info(request, f'You are editing {news.name}')
+
+    template = 'news/edit_news.html'
+    context = {
+        'form': form,
+        'news': news,
+    }
+
+    return render(request, template, context)
