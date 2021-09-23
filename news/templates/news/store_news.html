@@ -15,12 +15,30 @@
     <div class="row">
         <div class="col text-center">
             <h2 class="text-uppercase margin-product">Store News</h2>
+            <hr class="w-50 mb-1">
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            {{ news }}
+    {% for store_news in news %}
+        <div class="row justify-content-center my-4">
+            <div class="col-2">
+                {% if store_news.image %}
+                    <img class="news-image news" src="{{ store_news.image.url }}" alt="{{ store_news.name }}">
+                {% else %}
+                    <img class="news-image news" src="{{ MEDIA_URL }}noimage.png" alt="{{ store_news.name }}">
+                {% endif %}
+            </div>
+            <div class="col-6">
+                <p class="mb-2 text-overflow news"><strong>{{ store_news.name }}</strong></p>
+                <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
+                <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
+                <p class="mt-2 small text-muted">{{ store_news.date.date }}</p>
+            </div>
         </div>
-    </div>
+    {% endfor %}    
+</div>
+<div class="btt-button shadow-sm rounded-0 border border-dark">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-dark mx-auto my-auto"></i>
+    </a>	
 </div>
 {% endblock %}

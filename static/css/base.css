@@ -49,6 +49,11 @@ body {
     text-overflow: ellipsis;
 }
 
+.news-image {
+    height: 150px;
+    object-fit: cover;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -76,6 +81,7 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
+.news,
 .btt-link,
 .update-link,
 .remove-item {
