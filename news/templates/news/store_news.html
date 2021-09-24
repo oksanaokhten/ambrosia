@@ -40,7 +40,13 @@
                 </a>
                 <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
                 <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
-                <p class="mt-2 small text-muted">Published: {{ store_news.date.date }}</p>  
+                <p class="mt-2 mb-0 small text-muted">Published: {{ store_news.date.date }}</p>
+                {% if request.user.is_superuser %}
+                    <small class="mt-0">
+                        <a class="text-success" href="{% url 'edit_news' store_news.id %}">Edit</a> | 
+                        <a class="text-danger" href="{% url 'delete_news' store_news.id %}">Delete</a>
+                    </small>
+                {% endif %} 
             </div>
         </div>
     </div>

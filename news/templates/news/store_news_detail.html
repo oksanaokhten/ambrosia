@@ -25,6 +25,12 @@
         <div class="col-12 col-md-6 col-lg-6">
             <div class="product-details-container mb-5 mt-md-5">
                 <h5><strong>{{ store_news.name }}</strong></h5>
+                {% if request.user.is_superuser %}
+                    <small class="mt-0">
+                        <a class="text-success" href="{% url 'edit_news' store_news.id %}">Edit</a> | 
+                        <a class="text-danger" href="{% url 'delete_news' store_news.id %}">Delete</a>
+                    </small>
+                {% endif %} 
                 <p class="my-0 small text-muted">Author: {{ store_news.admin_name }}</p>
                 <p class="my-0 small text-muted">{{ store_news.admin_profession }}</p>
                 <p class="my-4 text-dark">{{ store_news.text }}</p>

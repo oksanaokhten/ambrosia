@@ -33,13 +33,14 @@ def add_news(request):
     if request.method == 'POST':
         form = NewsForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            news = form.save()
             messages.success(request, 'Successfully added news!')
-            return redirect(reverse('add_news'))
+            return redirect(reverse('news_detail', args=[news.id]))
         else:
             messages.error(request, 'Failed to add news. Please ensure the form is valid.')
     else:
         form = NewsForm()
+    
     template = 'news/add_news.html'
     context = {
         'form': form,
@@ -70,3 +71,11 @@ def edit_news(request, news_id):
     }
 
     return render(request, template, context)
+
+
+def delete_news(request, news_id):
+    """ Delete a news from the store """
+    news = get_object_or_404(News, pk=news_id)
+    news.delete()
+    messages.success(request, 'News deleted!')
+    return redirect(reverse('news'))
