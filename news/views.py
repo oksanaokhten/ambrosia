@@ -5,7 +5,6 @@ from .models import News
 from .forms import NewsForm
 
 
-@login_required
 def all_news(request):
     """ A view to show all store news """
 
@@ -18,7 +17,6 @@ def all_news(request):
     return render(request, 'news/store_news.html', context)
 
 
-@login_required
 def news_detail(request, news_id):
     """ A view to show individual store news details """
 
