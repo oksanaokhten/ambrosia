@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import News
 from .forms import NewsForm
 
 
+@login_required
 def all_news(request):
     """ A view to show all store news """
 
@@ -16,6 +18,7 @@ def all_news(request):
     return render(request, 'news/store_news.html', context)
 
 
+@login_required
 def news_detail(request, news_id):
     """ A view to show individual store news details """
 
@@ -28,8 +31,13 @@ def news_detail(request, news_id):
     return render(request, 'news/store_news_detail.html', context)
 
 
+@login_required
 def add_news(request):
     """ Add a news to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = NewsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -49,8 +57,13 @@ def add_news(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_news(request, news_id):
     """ Edit a news in the news manager """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     news = get_object_or_404(News, pk=news_id)
     if request.method == 'POST':
         form = NewsForm(request.POST, request.FILES, instance=news)
@@ -75,6 +88,10 @@ def edit_news(request, news_id):
 
 def delete_news(request, news_id):
     """ Delete a news from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     news = get_object_or_404(News, pk=news_id)
     news.delete()
     messages.success(request, 'News deleted!')
