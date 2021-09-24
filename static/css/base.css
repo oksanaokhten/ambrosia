@@ -209,7 +209,7 @@ input[name='q']::placeholder {
 	color: #28a745; /* text-success */
 }
 
-/* Product Form */
+/* Product/News Form */
 
 .btn-file {
     position: relative;
