@@ -84,6 +84,7 @@ def edit_news(request, news_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_news(request, news_id):
     """ Delete a news from the store """
     if not request.user.is_superuser:

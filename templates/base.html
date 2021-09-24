@@ -135,9 +135,16 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+    <main class="content">
+      {% block content %}
+      {% endblock %}
+    </main>
 
+    <footer class="container-fluid bg-white">
+      <div class="small my-4 text-center">
+        <strong>© 2021 Copyright Ambrosia</strong>
+      </div> 
+    </footer>
     {% block postloadjs %}
     <script type="text/javascript">
       $('.toast').toast('show');

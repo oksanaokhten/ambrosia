@@ -14,7 +14,7 @@ var style = {
         color: '#212529',
         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
         fontSmoothing: 'antialiased',
-        fontSize: '16px',
+        fontSize: '20px',
         '::placeholder': {
             color: '#aab7c4'
         }
