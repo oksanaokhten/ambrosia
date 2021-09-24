@@ -8,7 +8,7 @@ from .forms import NewsForm
 def all_news(request):
     """ A view to show all store news """
 
-    news = News.objects.all()
+    news = News.objects.all().order_by('-date')
     
     context = {
         'news': news,
