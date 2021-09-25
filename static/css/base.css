@@ -258,21 +258,26 @@ input#id-save-info.form-check-input {
     height: 20px;
 }
 
+/* -------------------------------- Contact Form */
+
+/* Next two code copied from checkout.css Boutique Ado Tutorial */
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#contact-form .form-control {
+    color: #212529;
+    border: 1px solid #212529;
+    border-radius: 0;
+}
+
+#contact-form .form-control::-webkit-input-placeholder {
+    color: #aab7c4;
+}
 
 /* -------------------------------- Media Queries */
-
-@media (min-width:1390px){
-    #front-text h1 {
-        margin-top: 300px;
-    }
-}
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -286,6 +291,19 @@ input#id-save-info.form-check-input {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+}
+
+@media (min-width: 1390px) {
+    #front-text h1 {
+        margin-top: 300px;
     }
 }
 

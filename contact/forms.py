@@ -23,7 +23,7 @@ class ContactForm(forms.ModelForm):
         placeholders = {
             'name': 'Name',
             'email': 'Email',
-            'message': 'Write your message here',
+            'message': 'Write your note here',
         }
 
         self.fields['name'].widget.attrs['autofocus'] = True

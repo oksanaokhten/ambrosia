@@ -1,11 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
-
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-{% endblock %}
-
 
 {% block page_header %}
     <div class="container header-container">
@@ -24,30 +18,29 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <p class="text-muted">Please include relevant details so we can better assist you.</p>
-                <form action="" method="" id="contact-form">
-                    <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-dark px-2 w-auto">Contact Details</legend>
-                        {{ contact_form.name | as_crispy_field }}
-                        {{ contact_form.email | as_crispy_field }}
-                    </fieldset>
-                    <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-dark px-2 w-auto">Message</legend>
-                        {{ contact_form.message | as_crispy_field }}	
-                    </fieldset>
-                    <div class="submit-button text-center mt-5 mb-2">
-						<button id="submit-button" class="btn btn-dark rounded-0">
-							<span class="font-weight-bold">Send</span>
-							<span class="icon">
-								<i class="fas fa-envelope"></i>
-							</span>
-						</button>	
-					</div>
-                </form>
-            </div>
+        <!-- Following code was copied from checkout.html Boutique Ado Tutorial and adjust for this project needs -->
+        <div class="col-md-6 offset-md-3 my-4">
+            <p class="text-muted ml-3">Please include relevant details so we can better assist you</p>
+            <form action="{% url 'contact' %}" method="POST" id="contact-form">
+                {% csrf_token %}
+                <fieldset class="rounded px-3 mb-5">
+                    <legend class="fieldset-label small text-dark px-2 w-auto">Contact Details</legend>
+                    {{ contact_form.name | as_crispy_field }}
+                    {{ contact_form.email | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded px-3 mb-5">
+                    <legend class="fieldset-label small text-dark px-2 w-auto">Message</legend>
+                    {{ contact_form.message | as_crispy_field }}	
+                </fieldset>
+                <div class="submit-button text-center my-5">
+                    <button id="submit-button" class="btn btn-dark rounded-0">
+                        <span class="font-weight-bold">Send</span>
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </button>	
+                </div>
+            </form>
         </div>
     </div>
 {% endblock %}
