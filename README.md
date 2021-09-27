@@ -5,6 +5,7 @@ This is a e-commerce website
 ![]()
 ## **User Experience (UX)**
 * ### **User stories**
+[View the User Stories here](https://docs.google.com/spreadsheets/d/15B0v0q7f93ZdcNREwMQn1jGTd3TQnubUqgNnKLBegZ4/edit#gid=0)
        
 * ### **Design**
     * **Colour Scheme**
