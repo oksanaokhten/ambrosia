@@ -32,6 +32,7 @@ This is a e-commerce website
 * **Notification system**
 * **Persistent storage: create, read, update and delete.**
 * **Security**
+- Security was provided by Django and decorators such as @login_required and @post_required
 * **Search options**
 * **Simplicity**
 * **Good image resolution**
