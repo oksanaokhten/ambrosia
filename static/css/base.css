@@ -354,6 +354,14 @@ input#id-save-info.form-check-input {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .margin-product {
+        margin-top: 40px;
+    }
+
+    .mt-4 {
+        margin-top: 0.7rem !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -392,6 +400,10 @@ input#id-save-info.form-check-input {
 
 @media (max-width: 350px) {
     #front-text h1 {
-        margin-top: 150px;
+        margin-top: 100px;
+    }
+
+    .margin-product {
+        margin-top: 20px;
     }
 }    
