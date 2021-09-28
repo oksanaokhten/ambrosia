@@ -1,8 +1,9 @@
-# ** **
-[View the live project here.]()
+# **Ambrosia**
+[View the live project here.](https://ambrosia-main.herokuapp.com/)
 
-This is a e-commerce website
-![]()
+This is an e-commerce website which sales organic drinks, juices and clothing.
+
+![Ambrosia](images/hero-image-hb.png)
 ## **User Experience (UX)**
 * ### **User stories**
 [View the User Stories here](https://docs.google.com/spreadsheets/d/15B0v0q7f93ZdcNREwMQn1jGTd3TQnubUqgNnKLBegZ4/edit#gid=0)
@@ -18,13 +19,13 @@ This is a e-commerce website
 
 * ### **Wireframes**
     * **Home Page** 
-    ![Ambrosia](.slugignore/images/ambrosia-home-page.png)
+    ![Ambrosia](images/ambrosia-home-page.png)
 
     * **Product Page** 
-    ![Ambrosia](.slugignore/images/ambrosia-product-page.png)
+    ![Ambrosia](images/ambrosia-product-page.png)
 
     * **Single Product Page** 
-    ![Ambrosia](.slugignore/images/ambrosia-single-product-page.png)
+    ![Ambrosia](images/ambrosia-single-product-page.png)
 
 ## **Features**
 * **Responsive on all device sizes**
