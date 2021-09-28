@@ -9,7 +9,7 @@ def all_news(request):
     """ A view to show all store news """
 
     news = News.objects.all().order_by('-date')
-    
+
     context = {
         'news': news,
     }
@@ -46,7 +46,7 @@ def add_news(request):
             messages.error(request, 'Failed to add news. Please ensure the form is valid.')
     else:
         form = NewsForm()
-    
+
     template = 'news/add_news.html'
     context = {
         'form': form,
