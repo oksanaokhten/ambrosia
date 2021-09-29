@@ -307,9 +307,13 @@ input#id-save-info.form-check-input {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1043px) {
     #front-text h1 {
         margin-top: 400px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0;
     }
 }
   
