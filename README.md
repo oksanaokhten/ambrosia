@@ -63,6 +63,10 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
     - jQuery was used with Materialize to make the navbar and other components responsive but was also used for the smooth scroll function in JavaScript.
 8. [Heroku](https://heroku.com/)
     - Heroku platform was used to deploy, run, and operate app entirely in the cloud.
+9. [AWS](https://aws.amazon.com/)
+    - Amazon Web Services were used to keep static and media files for this project.
+10. [Django](https://www.djangoproject.com/)
+    - High-level Python web framework Django was used to build quick and secure project.
 
 ## **Testing**
 - W3C Markup Validator
