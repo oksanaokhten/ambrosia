@@ -38,6 +38,7 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 * **Security**
     - Security was provided in Django allauth, by decorators such as @login_required and csrf_token which's included by default with each new project.
 * **Search options**
+    - A Site User can search a product by their name or description.
 * **Simplicity**
 * **Good image resolution**
 * **Speed**
@@ -85,7 +86,10 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 
 ### **Testing User Stories from User Experience (UX) Section**
-
+    - Purchasing and Checkout
+![payment](images/heroku-payment-successful.png)
+![profile](images/heroku-profile-with-first-order.png)
+![wh](images/heroku-webhook.png)						
 
 ### **Further Testing**
 ### **Known Bugs**
