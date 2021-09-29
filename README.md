@@ -104,10 +104,29 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 
 ### **Testing User Stories from User Experience (UX) Section**
-    - Purchasing and Checkout
+- Viewing and Navigation
+
+![First Part](images/view-navigate.png)
+
+- Registration and User Accounts
+
+![Second Part1](images/registration.png)
+![Second Part2](images/account.png)
+
+- Sorting and Searching
+
+![Third Part1](images/sorting1.png)
+![Third Part2](images/sorting2.png)
+![Third Part3](images/sorting3.png)
+- Purchasing and Checkout
+![Checkout1](images/checkout1.png)
+![Checkout2](images/checkout2.png)
+![Checkout3](images/checkout3.png)
 ![payment](images/heroku-payment-successful.png)
 ![profile](images/heroku-profile-with-first-order.png)
-![wh](images/heroku-webhook.png)						
+![wh](images/heroku-webhook.png)
+- Admin and Store/News Management
+- Contact Form																		
 
 ### **Further Testing**
 ### **Known Bugs**
