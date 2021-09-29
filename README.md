@@ -67,14 +67,14 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 ## **Testing**
 - W3C Markup Validator
 
-![html-checker]()
+![html-checker](images/css-report.png)
 - W3C CSS Validator
 
-![css-checker]()
+![css-checker](images/html-report.png)
 
 - Lighthouse report
 
-![lighthouse-report]()
+![lighthouse-report](images/heroku-light-h-report.png)
 
 
 ### **Testing User Stories from User Experience (UX) Section**
@@ -82,9 +82,8 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 ### **Further Testing**
 ### **Known Bugs**
-
-![issue]()
-![issue]()
+- I couldn't override the Stripe font-family style in card payment section:
+![different font-family style](images/stripe-payment-field.png)
 
 
 ## **Deployment**
