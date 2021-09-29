@@ -313,7 +313,7 @@ input#id-save-info.form-check-input {
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 0;
+        padding-right: 0 !important;
     }
 }
   
