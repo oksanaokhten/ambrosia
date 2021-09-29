@@ -119,6 +119,39 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 ## **Deployment**
 ### **Heroku**
+1. Create a new app on Heroku
+2. In Resources tab find a Heroku Postgres. Add a free plan database.
+3. In gitpod workspace:
+    - pip3 install dj_database_url
+    - pip3 install psycopg2-binary
+    - and freeze requirements
+4. In settings.py:
+    - import dj_database_url
+    - Comment out default configuration and replace it with Heroku database configuration.
+5. In gitpod workspace add data to Postgres:
+    - python3 manage.py showmigrations
+    - python3 manage.py migrate
+    - python3 manage.py loaddata categories
+    - python3 manage.py loaddata product
+    - python3 manage.py createsuperuser
+6. Before commit remove Heroku database config and uncomment the original database url.
+7. In settings.py:
+    - If 'DATABASE_URL' in os.environ: use a Heroku database, else- default configuration.
+8. In gitpod workspace:
+    - pip3 install gunicorn
+    - and freeze it into requirements file
+    - create a Procfile
+    - login to Heroku (heroku login -i)
+    - heroku config:set DISABLE_COLLECTSTATIC=1 --app ambrosia-main
+9. In settings.py:
+    - Add the host name of Heroku app to allowed host
+10. In gitpod workspace:
+    - heroku git:remote -a ambrosia-main
+    - git add .
+    - git commit -m "Deployment"
+    - git push
+    - git push heroku main
+11. If deployment successful, go to Heroku app. And on the deploy tab set it to connect to github. Search for the repository, then click 'connect'. With that finished- able automatic deploys.
 
 
 ## **Credits**
@@ -126,7 +159,7 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 - My project is based on Boutique Ado Tutorial. Python, JavaScript, CSS and HTML code were copied from it step-by-step and changed a little for my app's needs. News and Contact apps I have created on the base of this tutorial as well.
 - Bootstrap HTML, CSS and JavaScript code was used for a modern responsive front-end.
 ### **Content**
-- Content of User stories was writen to Boutique Ado Tutorial. News Management and Contact Form parts was added to it.
+- Content of User stories was writen to Boutique Ado Tutorial. I copied it and added News Management and Contact Form parts.
 ### **Media**
 - The Front Page Image were obtained from [Unsplash.com](https://unsplash.com/photos/tTHIC3uO6Ng).
 ### **Acknowledgements**
