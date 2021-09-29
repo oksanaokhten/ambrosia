@@ -11,7 +11,6 @@ class ContactAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'email',
-        'message',
     )
 
     ordering = ('-pk',)
