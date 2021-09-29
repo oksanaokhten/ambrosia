@@ -92,10 +92,8 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 ## **Credits**
 ### **Code**
-- My project is based on Boutique Ado Tutorial. Python, JavaScript, CSS and HTML code were copied from it and changed a little for my app's needs.
+- My project is based on Boutique Ado Tutorial. Python, JavaScript, CSS and HTML code were copied from it step-by-step and changed a little for my app's needs. News and Contact apps I have created on the base of this tutorial.
 - Bootstrap HTML, CSS and JavaScript code was used for a modern responsive front-end.
-- A modal popup HTML, CSS and JavaScript code was taken from [W3schools](https://www.w3schools.com/howto/howto_css_modals.asp).
-
 ### **Content**
 
 ### **Media**
