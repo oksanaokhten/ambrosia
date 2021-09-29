@@ -6,7 +6,10 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 ![Ambrosia](images/hero-image-hb.png)
 ## **User Experience (UX)**
 * ### **User stories**
-[View the User Stories here](https://docs.google.com/spreadsheets/d/15B0v0q7f93ZdcNREwMQn1jGTd3TQnubUqgNnKLBegZ4/edit#gid=0)
+![User Stories](images/us-1.png)
+![User Stories](images/us-2.png)
+![User Stories](images/us-3.png)
+![User Stories](images/us-4.png)
        
 * ### **Design**
     * **Colour Scheme**
@@ -29,6 +32,21 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 ## **Features**
 * **Responsive on all device sizes**
+    - iPhone 5/SE
+
+    ![iPhone](images/iPhone-5-se.png)
+
+    - iPad
+
+    ![iPad](images/iPad.png)
+
+    - iPad Pro
+
+    ![iPad Pro](images/iPad-Pro.png)
+
+    - Desktop
+
+    ![Desktop](images/desktop.png)
 * **Interactive elements**
     - The shoppers in this e-commerce website, could add, update, remove products and adjust the shopping bag.
 * **Notification system**
@@ -95,7 +113,9 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 ### **Known Bugs**
 - I couldn't override the Stripe font-family style in card payment section:
 ![different font-family style](images/stripe-payment-field.png)
-
+- My deployment process took 3 days with the same outcome:
+![deployment-error](images/heroku-deploy-error.png)
+- Error was found by one of the tutors. After .slugignor file was removed, deployment went well.
 
 ## **Deployment**
 ### **Heroku**
@@ -103,10 +123,10 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
 ## **Credits**
 ### **Code**
-- My project is based on Boutique Ado Tutorial. Python, JavaScript, CSS and HTML code were copied from it step-by-step and changed a little for my app's needs. News and Contact apps I have created on the base of this tutorial.
+- My project is based on Boutique Ado Tutorial. Python, JavaScript, CSS and HTML code were copied from it step-by-step and changed a little for my app's needs. News and Contact apps I have created on the base of this tutorial as well.
 - Bootstrap HTML, CSS and JavaScript code was used for a modern responsive front-end.
 ### **Content**
-
+- Content of User stories was writen to Boutique Ado Tutorial. News Management and Contact Form parts was added to it.
 ### **Media**
 - The Front Page Image were obtained from [Unsplash.com](https://unsplash.com/photos/tTHIC3uO6Ng).
 ### **Acknowledgements**
