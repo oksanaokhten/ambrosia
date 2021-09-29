@@ -30,10 +30,13 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 ## **Features**
 * **Responsive on all device sizes**
 * **Interactive elements**
+    - The shoppers in this e-commerce website, could add, update, remove products and adjust the shopping bag.
 * **Notification system**
+    - Success, alert and error messages are provided for many of shopper's actions.
 * **Persistent storage: create, read, update and delete.**
+    - Heroku Postgres and AWS S3 were used to store data for this project.
 * **Security**
-- Security was provided by Django and decorators such as @login_required and @post_required
+    - Security was provided in Django allauth, by decorators such as @login_required and csrf_token which's included by default with each new project.
 * **Search options**
 * **Simplicity**
 * **Good image resolution**
