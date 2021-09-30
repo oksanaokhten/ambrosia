@@ -118,15 +118,27 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 ![Third Part1](images/sorting1.png)
 ![Third Part2](images/sorting2.png)
 ![Third Part3](images/sorting3.png)
+
 - Purchasing and Checkout
+
 ![Checkout1](images/checkout1.png)
 ![Checkout2](images/checkout2.png)
 ![Checkout3](images/checkout3.png)
 ![payment](images/heroku-payment-successful.png)
 ![profile](images/heroku-profile-with-first-order.png)
 ![wh](images/heroku-webhook.png)
+
 - Admin and Store/News Management
-- Contact Form																		
+
+![add-product](images/add-p.png)
+![edit-delete-product](images/edit-delete-p.png)
+![add-edit-news](images/add-edit-news.png)
+![update-delete-news](images/update-delete-news.png)
+
+- Contact Form
+
+![contact-form](images/contact-form.png)
+![admin-contact](images/admin-contact.png)
 
 ### **Further Testing**
 ### **Known Bugs**
@@ -134,7 +146,8 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 ![different font-family style](images/stripe-payment-field.png)
 - My deployment process took 3 days with the same outcome:
 ![deployment-error](images/heroku-deploy-error.png)
-- Error was found by one of the tutors. After .slugignor file was removed, deployment went well.
+Error was found by one of the tutors. After .slugignor file was removed, deployment went well.
+- In iPad Pro view the quantity box is jammed, the number is not shown.
 
 ## **Deployment**
 ### **Heroku**
