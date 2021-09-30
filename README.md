@@ -48,7 +48,7 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 
     ![Desktop](images/desktop.png)
 * **Interactive elements**
-    - The shoppers in this e-commerce website, could add, update, remove products and adjust the shopping bag.
+    - The shoppers in this e-commerce website, could add, update and remove products from their shopping bag.
 * **Notification system**
     - Success, alert and error messages are provided for many of shopper's actions.
 * **Persistent storage: create, read, update and delete.**
@@ -147,7 +147,7 @@ This is an e-commerce website which sales organic drinks, juices and clothing.
 - My deployment process took 3 days with the same outcome:
 ![deployment-error](images/heroku-deploy-error.png)
 Error was found by one of the tutors. After .slugignor file was removed, deployment went well.
-- In iPad Pro view the quantity box is jammed, the number is not shown.
+- In iPad Pro view, the quantity box is jammed, the number is not shown.
 
 ## **Deployment**
 ### **Heroku**
@@ -193,7 +193,24 @@ Error was found by one of the tutors. After .slugignor file was removed, deploym
 ### **Content**
 - Content of User stories was writen to Boutique Ado Tutorial. I copied it and added News Management and Contact Form parts.
 ### **Media**
-- The Front Page Image were obtained from [Unsplash.com](https://unsplash.com/photos/tTHIC3uO6Ng).
+- The Front Page Image was obtained from [Unsplash.com](https://unsplash.com/photos/tTHIC3uO6Ng).
+- The woman t-shirt image was download from [Unsplash.com](https://unsplash.com/photos/DBGwy7s3QY0).
+- The man white t-shirt image was taken from [Unsplash.com](https://unsplash.com/photos/WWesmHEgXDs)
+- The image for the news page was get from [Unsplash.com](https://unsplash.com/photos/vGQ49l9I4EE)
+- All other images, also, were downloaded from Unsplash:
+
+    [Apricot Drink](https://unsplash.com/photos/nClgfxJoZ_c)
+
+    [Apple Drink](https://unsplash.com/photos/XlxLjfac1sA)
+
+    [Apple Juice](https://unsplash.com/photos/DapP9j2DJMQ)
+
+    [Grape Juice](https://unsplash.com/photos/M4KpA7NC-l0)
+
+    [Tomato Juice](https://unsplash.com/photos/Tmz8FThN_BE)
+
+    [Apricot Juice](https://unsplash.com/photos/RYqO8DhPg68)
+
 ### **Acknowledgements**
 - My Mentor for continuous helpful feedback, ideas and support.
 - Tutor support at Code Institute for their support.
